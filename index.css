@@ -1,0 +1,32 @@
+body{
+    background-color: gradient #2b013f;
+    font-family: monospace;
+    font-size: medium;
+    align-items: center;
+    width: 100%;
+    height: fit-content;
+    cursor: none;
+}
+.cursor{
+    display: flex;
+    position: fixed;
+    width: 15%;
+    top: 0;
+    left: 0;
+    background-color: transparent;
+
+}
+@keyframes transition{
+    from{
+            opacity: 0;
+            transform: translateX(-100%);
+    }
+    to{
+            opacity: 100%;
+            transform: none;
+    }
+
+}
+#all{
+    animation:transition 2s;
+}
