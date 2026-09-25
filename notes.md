@@ -92,3 +92,34 @@
     left: 0%;
     z-index: 101;
 }
+
+.shot2{
+    display: none;
+}
+
+.continue3{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 10%;
+    color: #ffff;
+    padding: 1%;
+    background-color: #000000;
+    width: 2%;
+    height: auto;
+    position: absolute;
+    top: 90%;
+    left: 90%;
+    z-index: 119;
+}
+.no3{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 10%;
+    color: #ffff;
+    padding: 1%;
+    background-color: #000000;
+    width: 2%;
+    height: auto;
+    position: absolute;
+    top: 94%;
+    left: 90%;
+    z-index: 119; 
+}

@@ -18,7 +18,6 @@ body{
     left: 0;
     background-color: transparent;
     z-index: 9999;
-    pointer-events: all;
 }
 @keyframes transition{
     from{
@@ -81,8 +80,6 @@ h2{
         color: #afaaaa;
     }
 }
-/*presentation*/
-
 .here{
     text-transform: uppercase;
     animation: appears 8s ;
@@ -102,7 +99,6 @@ h2{
     position: absolute;
     top: 90%;
     left: 90%;
-    cursor: pointer;
     z-index:98;
 }
 
@@ -115,22 +111,27 @@ h2{
     top: 0%;
     left: 0%;
 }
-
+/*all scenes container*/
 .scenarioscontainer{
     width: 409px;
     height: 731px;
+    top: 0%;
+    left: 0%;
     cursor: none;
 }
 /*escene 1*/
 .shot1{
     display: none;
 }
-.desicion1{
+.walking{
     text-transform: uppercase;
     z-index: 106;
     width: 100%;
-    position: relative;
-    color: #423c33bb;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    padding: 2%;
+    color: #675f52bb;
     font-family: monospace;
     font-size: 50%;
 }
@@ -164,12 +165,15 @@ h2{
     position:absolute;
     width: 120%;
     opacity: 100%;
-    top: -50%;
+    top: -60%;
     left: 0%;
     z-index: 100;
-    filter: brightness(20%);
+    filter: brightness(30%);
 }
 /*escene 2*/
+.shot2{
+    display: none;
+}
 .see{
     text-transform: uppercase;
     z-index: 112;
@@ -178,7 +182,6 @@ h2{
     color: #c04f03bb;
     font-family: monospace;
     font-size: 50%;
-    animation: appears 8s ;
 }
 .randomtext2{
     font-family: 'Courier New', Courier, monospace;
@@ -189,7 +192,6 @@ h2{
     height: auto;
     position: absolute;
     z-index: 111;
-    animation: appears 8s ;
 }
 .continue2{
     font-family: 'Courier New', Courier, monospace;
@@ -203,7 +205,6 @@ h2{
     top: 90%;
     left: 90%;
     z-index: 111;
-    animation: appears 8s ;
 }
 .no2{
     font-family: 'Courier New', Courier, monospace;
@@ -217,7 +218,6 @@ h2{
     top: 94%;
     left: 90%;
     z-index: 111; 
-    animation: appears 8s ;
 }
 .BG2{
     position:absolute;
@@ -226,5 +226,23 @@ h2{
     top: -40%;
     left: 0%;
     z-index: 109;
+}
+/*scene 3*/
+.choose{
+    text-transform: uppercase;
+    z-index: 120;
+    width: 100%;
+    position: relative;
+    color: #c04f03bb;
+    font-family: monospace;
+    font-size: 50%;
+}
 
+.BG3{
+    position:absolute;
+    width: 104%;
+    opacity: 100%;
+    top: -40%;
+    left: 0%;
+    z-index: 117;
 }
