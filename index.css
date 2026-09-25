@@ -373,3 +373,74 @@ h2{
     filter:blur(70%);
     z-index: 135;
 }
+/*scene 6 shot 3*/
+.shot6{
+    display: none;
+}
+.brat1stdialogue{
+    z-index: 150;
+    width: fit-content;
+    position: absolute;
+    color: #938686;
+    background-color: #000000;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 24%;
+    top: 50%;
+    left: 50%;
+    overflow: hidden;
+    animation: text 6s;
+}
+@keyframes text{
+    from{
+    opacity: (0%);
+    transform: translateX(-100%);
+    }
+    to{
+    opacity: (100%);
+    transform: translateX(0%);
+    }
+}
+.goback{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 10%;
+    color: #ffff;
+    padding: 1%;
+    background-color: #000000;
+    width: 2%;
+    height: auto;
+    position: absolute;
+    top: 10%;
+    left: 90%;
+    z-index: 149; 
+}
+.thx{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 10%;
+    color: #ffff;
+    padding: 1%;
+    background-color: #000000;
+    width: 2%;
+    height: auto;
+    position: absolute;
+    top: 0%;
+    left: 90%;
+    z-index: 148; 
+}
+.talking{
+    position: absolute;
+    padding: 2%;
+    width: 28%;
+    height: auto;
+    top: 0%; 
+    left: 0%;
+    z-index: 147;
+}
+.BG6{
+    position:absolute;
+    width: 104%;
+    opacity: 100%;
+    top: 0;
+    left: 0;
+    filter:blur(70%);
+    z-index: 146;
+}
