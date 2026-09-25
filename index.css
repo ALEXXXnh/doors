@@ -7,6 +7,7 @@ body{
     height: 731px;
     cursor: none;
     overflow: hidden;
+        
 }
 .cursor{
     display: flex;
@@ -21,11 +22,9 @@ body{
 @keyframes transition{
     from{
             opacity: 0;
-            transform: scale(2, 2);
     }
     to{
             opacity: 100%;
-            transform: none;
     }
 
 }
@@ -55,12 +54,21 @@ h2{
 /*presentation*/
 
 .yolo{
-    position: relative;
+    position: absolute;
     opacity: 0;
     z-index: 1000;
 }
 .yolo:hover{
     opacity: 100%;
+}
+
+@keyframes flashlight{
+    from{
+        opacity: 50%;
+    }
+    to{
+        opacity: 100%;
+    }
 }
 @keyframes appears{
     from{
@@ -72,18 +80,12 @@ h2{
         color: #afaaaa;
     }
 }
-@keyframes flashlight{
-    from{
-        opacity: 50%;
-    }
-    to{
-        opacity: 100%;
-    }
-}
+/*presentation*/
+
 .here{
     text-transform: uppercase;
     animation: appears 8s ;
-    z-index: 999;
+    z-index: 99;
 }
 .here:hover{
     animation: flashlight 0.12s infinite;
@@ -100,16 +102,36 @@ h2{
     top: 90%;
     left: 90%;
     cursor: pointer;
-    z-index:998;
+    z-index:98;
 }
 
-.BG1{
+.BG{
     position:absolute;
     width: 100%;
     align-items: center;
-    opacity: 89%;
-    z-index: 997;
+    opacity: 100%;
+    z-index: 97;
     top: 0%;
     left: 0%;
 }
+
+.scenarioscontainer{
+    background-color: #000000;
+    font-family: monospace;
+    font-size: medium;
+    align-items: center;
+    width: 409px;
+    height: 731px;
+    cursor: none;
+}
 /*escene 1*/
+.BG1{
+    position:absolute;
+    height: 409px;
+    width: 731px;
+    align-items: center;
+    opacity: 100%;
+    top: 0%;
+    left: 0%;
+    z-index: 101;
+}
