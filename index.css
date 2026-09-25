@@ -293,7 +293,7 @@ h2{
 /*scene4 shot 1 door1*/
 
 
-.click{
+.click4{
     font-family: 'Courier New', Courier, monospace;
     font-size: 10%;
     color: #ffff;
@@ -443,4 +443,71 @@ h2{
     left: 0;
     filter:blur(70%);
     z-index: 146;
+}
+/*scene 7 shot 1 door 2*/
+.shot7{
+    display: none;
+}
+
+.continue7{            /*THIS IS DIFFERENT BC ITS AN ALL SCREEN BUTTON*/
+    width: 100%;
+    height: 100%;
+    z-index: 160;
+}
+.click7{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 10%;
+    color: #ffff;
+    padding: 1%;
+    background-color: #000000;
+    width: 2%;
+    height: auto;
+    position: absolute;
+    top: auto;
+    left: 0%;
+    z-index: 159; 
+}
+.BG7{
+    position:absolute;
+    width: 124%;
+    opacity: 100%;
+    top: -70%;
+    left: 0%;
+    z-index: 158;
+}
+/*scene 8 shot 2 door 2*/
+.help{
+    text-decoration: underline;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 10%;
+    color: #afaaaa;
+    padding: 1%;
+    background-color: #000000;
+    width: 5%;
+    height: auto;
+    position: absolute;
+    top: 85%;
+    left: 85%;
+    animation: appears 5s;
+    z-index: 170;
+}
+.help:hover{
+    filter: brightness(190%);
+}
+.shovel{
+    position: absolute;
+    width: auto;
+    height: 120%;
+    top:-3%;
+    right: 0%;
+    z-index: 169;
+}
+.job{
+    width: fit-content;
+    height: auto;
+    top: 0%;
+
+    align-items: center;
+    position: absolute;
+    z-index: 168;
 }
