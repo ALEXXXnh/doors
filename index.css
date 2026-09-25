@@ -18,6 +18,7 @@ body{
     left: 0;
     background-color: transparent;
     z-index: 9999;
+    pointer-events: all;
 }
 @keyframes transition{
     from{
@@ -46,7 +47,7 @@ h2{
     position: absolute;
     color: #afaaaa;
     font-family: monospace;
-    font-size: 50%;
+    font-size: 60%;
 }
 
 
@@ -116,22 +117,114 @@ h2{
 }
 
 .scenarioscontainer{
-    background-color: #000000;
-    font-family: monospace;
-    font-size: medium;
-    align-items: center;
     width: 409px;
     height: 731px;
     cursor: none;
 }
 /*escene 1*/
+.shot1{
+    display: none;
+}
+.desicion1{
+    text-transform: uppercase;
+    z-index: 106;
+    width: 100%;
+    position: relative;
+    color: #423c33bb;
+    font-family: monospace;
+    font-size: 50%;
+}
+.continue1{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 10%;
+    color: #ffff;
+    padding: 1%;
+    background-color: #000000;
+    width: 2%;
+    height: auto;
+    position: absolute;
+    top: 90%;
+    left: 90%;
+    z-index: 105;
+}
+.no1{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 10%;
+    color: #ffff;
+    padding: 1%;
+    background-color: #000000;
+    width: 2%;
+    height: auto;
+    position: absolute;
+    top: 94%;
+    left: 90%;
+    z-index: 105; 
+}
 .BG1{
     position:absolute;
-    height: 409px;
-    width: 731px;
-    align-items: center;
+    width: 120%;
     opacity: 100%;
-    top: 0%;
+    top: -50%;
     left: 0%;
-    z-index: 101;
+    z-index: 100;
+    filter: brightness(20%);
+}
+/*escene 2*/
+.see{
+    text-transform: uppercase;
+    z-index: 112;
+    width: 100%;
+    position: relative;
+    color: #c04f03bb;
+    font-family: monospace;
+    font-size: 50%;
+    animation: appears 8s ;
+}
+.randomtext2{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 10%;
+    color: #ffff;
+    padding: 1%;
+    width: 10%;
+    height: auto;
+    position: absolute;
+    z-index: 111;
+    animation: appears 8s ;
+}
+.continue2{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 10%;
+    color: #ffff;
+    padding: 1%;
+    background-color: #000000;
+    width: 2%;
+    height: auto;
+    position: absolute;
+    top: 90%;
+    left: 90%;
+    z-index: 111;
+    animation: appears 8s ;
+}
+.no2{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 10%;
+    color: #ffff;
+    padding: 1%;
+    background-color: #000000;
+    width: 2%;
+    height: auto;
+    position: absolute;
+    top: 94%;
+    left: 90%;
+    z-index: 111; 
+    animation: appears 8s ;
+}
+.BG2{
+    position:absolute;
+    width: 104%;
+    opacity: 100%;
+    top: -40%;
+    left: 0%;
+    z-index: 109;
+
 }
