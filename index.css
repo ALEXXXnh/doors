@@ -233,11 +233,52 @@ h2{
     z-index: 120;
     width: 100%;
     position: relative;
-    color: #c04f03bb;
+    color: #220808;
     font-family: monospace;
     font-size: 50%;
 }
-
+.door1{
+    position: absolute ;
+    width: 12%;
+    height: 24%;
+    background-color: #ffffff;
+    margin-top: -2%;
+    left: 13%;
+    filter: opacity(0%);
+    z-index: 119;
+}
+.door1:hover{
+    filter: opacity(20%);
+    transform: scale(1.5, 1.5);
+}
+.door2{
+    position: absolute;                   
+    width: 12%;
+    height: 24%;
+    background-color: #ffffff;
+    margin-top: -2%;
+    left: 46%;
+    filter: opacity(0%);
+    z-index: 119;
+}
+.door2:hover{
+    filter: opacity(20%);
+    transform: scale(1.5, 1.5);
+}
+.door3{
+    position: absolute;
+    width: 12%;
+    height: 24%;
+    background-color: #ffffff;
+    margin-top: -2%;
+    left: 80%;
+    filter: opacity(0%);
+    z-index: 119;
+}
+.door3:hover{
+    filter: opacity(20%);
+    transform: scale(1.5, 1.5);
+}
 .BG3{
     position:absolute;
     width: 104%;
@@ -245,4 +286,48 @@ h2{
     top: -40%;
     left: 0%;
     z-index: 117;
+}
+/*scene 4 door1*/
+.what{
+    text-transform: uppercase;
+    z-index: 130;
+    width: 100%;
+    position: relative;
+    color: #c04f03bb;
+    font-family: monospace;
+    font-size: 50%;
+}
+.continue4{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 10%;
+    color: #ffff;
+    padding: 1%;
+    background-color: #000000;
+    width: 2%;
+    height: auto;
+    position: absolute;
+    top: 90%;
+    left: 90%;
+    z-index: 111;
+}
+.randomtext4{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 10%;
+    color: #ffff;
+    padding: 1%;
+    background-color: #000000;
+    width: 2%;
+    height: auto;
+    position: absolute;
+    top: auto;
+    left: 0%;
+    z-index: 111; 
+}
+.BG4{
+    position:absolute;
+    width: 104%;
+    opacity: 100%;
+    top: -40%;
+    left: 0%;
+    z-index: 109;
 }
