@@ -228,6 +228,9 @@ h2{
     z-index: 109;
 }
 /*scene 3*/
+.shot3{
+    display: none;
+}
 .choose{
     text-transform: uppercase;
     z-index: 120;
@@ -287,30 +290,10 @@ h2{
     left: 0%;
     z-index: 117;
 }
-/*scene 4 door1*/
-.what{
-    text-transform: uppercase;
-    z-index: 130;
-    width: 100%;
-    position: relative;
-    color: #c04f03bb;
-    font-family: monospace;
-    font-size: 50%;
-}
-.continue4{
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 10%;
-    color: #ffff;
-    padding: 1%;
-    background-color: #000000;
-    width: 2%;
-    height: auto;
-    position: absolute;
-    top: 90%;
-    left: 90%;
-    z-index: 111;
-}
-.randomtext4{
+/*scene4 shot 1 door1*/
+
+
+.click{
     font-family: 'Courier New', Courier, monospace;
     font-size: 10%;
     color: #ffff;
@@ -321,13 +304,72 @@ h2{
     position: absolute;
     top: auto;
     left: 0%;
-    z-index: 111; 
+    z-index: 130; 
+}
+
+.shot4{
+    display: none;
+}
+.continue4{            /*THIS IS DIFFERENT BC ITS AN ALL SCREEN BUTTON*/
+    width: 100%;
+    height: 100%;
+    z-index: 129;
 }
 .BG4{
     position:absolute;
     width: 104%;
     opacity: 100%;
-    top: -40%;
+    top: 0%;
     left: 0%;
-    z-index: 109;
+    z-index: 128;
+}
+/*scene 5 shot 2 door1*/
+.shot5{
+    display:  none;
+}
+.what{
+    text-transform: uppercase;
+    z-index: 140;
+    width: 100%;
+    position: absolute;
+    color: #ffffff;
+    font-family: monospace;
+    font-size: 70%;
+    top: 0%;
+    left: 0%;
+}
+.talk{
+    padding: 2%;
+    width: 20%;
+    height: auto;
+    position: absolute;
+    filter: brightness(10%);
+    top: 10%; 
+    left: 80%;
+    z-index: 139;
+}
+.talk:hover{
+    filter: brightness(100%);
+}
+.randomtext5{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 10%;
+    color: #ffff;
+    padding: 1%;
+    background-color: #000000;
+    width: 2%;
+    height: auto;
+    position: absolute;
+    top: auto;
+    left: 0%;
+    z-index: 138; 
+}
+.BG5{
+    position:absolute;
+    width: 104%;
+    opacity: 100%;
+    top: 0;
+    left: 0;
+    filter:blur(70%);
+    z-index: 135;
 }
