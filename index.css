@@ -544,7 +544,10 @@ h2{
     right: 0%;
     z-index: 178;
 }
-/*scene 9 shot 2 door 3*/
+/*scene 10 shot 2 door 3*/
+.shot10{
+    display: none;
+}
 .BG10{
     position: absolute;
     top: 0%;
@@ -558,3 +561,41 @@ h2{
 .BG10:hover{
     filter: brightness(120%);
 }
+/*scene 11 shot 3 door 3*/
+.shot11{
+    display: none;
+}
+.continue11{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 10%;
+    color: #ffff;
+    padding: 0%;
+    background-color: #000000;
+    width: 2%;
+    height: auto;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    z-index: 200; 
+}
+@keyframes screamer{
+    from{
+        background-color: #000000;
+    }
+    to{
+        background-color: #fdfbfb;
+    }
+
+}
+.BG11{
+    position: absolute;
+    top: -26%;
+    left: 0%;
+    width: 70%;
+    padding: 15%;
+    height: fit-content;
+    background-color: #000000;
+    z-index: 190;
+    animation: screamer infinite 0.1s;
+}
+/*scene 11 shot 3 door 3*/
