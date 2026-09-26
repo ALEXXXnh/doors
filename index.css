@@ -5,7 +5,6 @@ body{
     align-items: center;
     width: 409px;
     height: 731px;
-    cursor: none;
     overflow: hidden;
         
 }
@@ -17,6 +16,8 @@ body{
     top: 0;
     left: 0;
     background-color: transparent;
+    pointer-events: none;
+    transition: 0.2s;
     z-index: 9999;
 }
 @keyframes transition{
@@ -92,7 +93,7 @@ h2{
     font-family: 'Courier New', Courier, monospace;
     font-size: 10%;
     color: #ffff;
-    padding: -4%;
+    padding: 1%;
     background-color: #000000;
     width: 2%;
     height: auto;
@@ -119,10 +120,13 @@ h2{
     left: 0%;
     cursor: none;
 }
-/*escene 1*/
-.shot1{
+
+.shot{
     display: none;
 }
+
+
+/*escene 1*/
 .walking{
     text-transform: uppercase;
     z-index: 106;
@@ -171,14 +175,14 @@ h2{
     filter: brightness(30%);
 }
 /*escene 2*/
-.shot2{
-    display: none;
-}
+
 .see{
     text-transform: uppercase;
     z-index: 112;
     width: 100%;
-    position: relative;
+    position: absolute;
+    top: 0%;
+    left: 0%;
     color: #c04f03bb;
     font-family: monospace;
     font-size: 50%;
@@ -228,14 +232,14 @@ h2{
     z-index: 109;
 }
 /*scene 3*/
-.shot3{
-    display: none;
-}
+
 .choose{
     text-transform: uppercase;
     z-index: 120;
     width: 100%;
-    position: relative;
+    position: absolute;
+    top: 0%;
+    left: 0%;
     color: #220808;
     font-family: monospace;
     font-size: 50%;
@@ -245,7 +249,7 @@ h2{
     width: 12%;
     height: 24%;
     background-color: #ffffff;
-    margin-top: -2%;
+    margin-top: 10%;
     left: 13%;
     filter: opacity(0%);
     z-index: 119;
@@ -259,7 +263,7 @@ h2{
     width: 12%;
     height: 24%;
     background-color: #ffffff;
-    margin-top: -2%;
+    margin-top: 10%;
     left: 46%;
     filter: opacity(0%);
     z-index: 119;
@@ -273,7 +277,7 @@ h2{
     width: 12%;
     height: 24%;
     background-color: #ffffff;
-    margin-top: -2%;
+    margin-top: 10%;
     left: 80%;
     filter: opacity(0%);
     z-index: 119;
@@ -299,34 +303,32 @@ h2{
     color: #ffff;
     padding: 1%;
     background-color: #000000;
-    width: 2%;
+    width: 10%;
     height: auto;
     position: absolute;
     top: auto;
     left: 0%;
     z-index: 130; 
 }
-
-.shot4{
-    display: none;
-}
-.continue4{            /*THIS IS DIFFERENT BC ITS AN ALL SCREEN BUTTON*/
+.continue4{    
+    position: absolute;        /*THIS IS DIFFERENT BC ITS AN ALL SCREEN BUTTON*/
     width: 100%;
     height: 100%;
-    z-index: 129;
+    z-index: 131;
+    top: 0%;
+    left: 0%;
+    filter: brightness(80%);
 }
 .BG4{
     position:absolute;
-    width: 104%;
+    width: 106%;
     opacity: 100%;
-    top: 0%;
+    top: -36%;
     left: 0%;
     z-index: 128;
 }
 /*scene 5 shot 2 door1*/
-.shot5{
-    display:  none;
-}
+
 .what{
     text-transform: uppercase;
     z-index: 140;
@@ -374,9 +376,7 @@ h2{
     z-index: 135;
 }
 /*scene 6 shot 3*/
-.shot6{
-    display: none;
-}
+
 .brat1stdialogue{
     z-index: 150;
     width: fit-content;
@@ -445,14 +445,15 @@ h2{
     z-index: 146;
 }
 /*scene 7 shot 1 door 2*/
-.shot7{
-    display: none;
-}
 
-.continue7{            /*THIS IS DIFFERENT BC ITS AN ALL SCREEN BUTTON*/
+.continue7{
+    position: absolute;        /*THIS IS DIFFERENT BC ITS AN ALL SCREEN BUTTON*/
     width: 100%;
     height: 100%;
     z-index: 160;
+    top: 0%;
+    left: 0%;
+    filter: brightness(80%);
 }
 .click7{
     font-family: 'Courier New', Courier, monospace;
@@ -476,9 +477,7 @@ h2{
     z-index: 158;
 }
 /*scene 8 shot 2 door 2*/
-.shot8{
-    display: none;
-}
+
 .help{
     text-decoration: underline;
     font-family: 'Courier New', Courier, monospace;
@@ -515,13 +514,15 @@ h2{
     z-index: 168;
 }
 /*scene 9 shot 1 door 3*/
-.shot9{
-    display: none;
-}
+
 .continue9{            /*THIS IS DIFFERENT BC ITS AN ALL SCREEN BUTTON*/
+    position: absolute;        /*THIS IS DIFFERENT BC ITS AN ALL SCREEN BUTTON*/
     width: 100%;
     height: 100%;
     z-index: 180;
+    top: 0%;
+    left: 0%;
+    filter: brightness(80%);
 }
 .click9{
     font-family: 'Courier New', Courier, monospace;
@@ -545,9 +546,7 @@ h2{
     z-index: 178;
 }
 /*scene 10 shot 2 door 3*/
-.shot10{
-    display: none;
-}
+
 .BG10{
     position: absolute;
     top: 0%;
@@ -562,9 +561,7 @@ h2{
     filter: brightness(120%);
 }
 /*scene 11 shot 3 door 3*/
-.shot11{
-    display: none;
-}
+
 .continue11{
     font-family: 'Courier New', Courier, monospace;
     font-size: 10%;
@@ -599,9 +596,7 @@ h2{
     animation: screamer infinite 0.1s;
 }
 /*scene 12 shot 4 door 3*/
-.shot12{
-    display: none;
-}
+
 .hey{
     text-transform: uppercase;
     width: 100%;
@@ -623,9 +618,9 @@ h2{
     left: 0%;
     z-index: 209;
 }
-.continue12{
+.txt12{
     font-family: 'Courier New', Courier, monospace;
-    font-size: 10%;
+    font-size: 12%;
     color: #ffff;
     padding: 1%;
     background-color: #000000;
@@ -645,7 +640,7 @@ h2{
     width: 15%;
     height: auto;
     position: absolute;
-    top: 10%;
+    top: 70%;
     left: 70%;
     z-index: 207; 
 }
@@ -658,7 +653,7 @@ h2{
     width: 15%;
     height: auto;
     position: absolute;
-    top: 40%;
+    top: 80%;
     left: 70%;
     z-index: 206; 
 }
@@ -673,9 +668,7 @@ h2{
     z-index: 201;
 }
 /*credits scene 13 shot 1 door 3*/
-.shot13{
-display: none;
-}
+
 .end{
     text-transform: uppercase;
     width: 100%;
