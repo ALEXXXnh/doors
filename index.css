@@ -477,24 +477,35 @@ h2{
     z-index: 158;
 }
 /*scene 8 shot 2 door 2*/
-
+@keyframes slowappear {
+    from{
+opacity: 0%;
+color: #ffffff;
+    }
+    to{
+opacity: 40%;
+color: #080808;
+    }
+}
 .help{
-    text-decoration: underline;
     font-family: 'Courier New', Courier, monospace;
     font-size: 10%;
-    color: #afaaaa;
+  
     padding: 1%;
-    background-color: #000000;
     width: 5%;
     height: auto;
     position: absolute;
-    top: 85%;
+    top: 80%;
     left: 85%;
-    animation: appears 5s;
+    animation: slowappears 100s;
     z-index: 170;
 }
 .help:hover{
     filter: brightness(190%);
+    color: #cd1616;
+    text-transform:uppercase;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 18%;
 }
 .shovel{
     position: absolute;
@@ -562,6 +573,8 @@ h2{
 }
 /*scene 11 shot 3 door 3*/
 
+
+
 .continue11{
     font-family: 'Courier New', Courier, monospace;
     font-size: 10%;
@@ -593,7 +606,7 @@ h2{
     height: fit-content;
     background-color: #000000;
     z-index: 190;
-    animation: screamer infinite 0.1s;
+    animation: screamer infinite 0.01s;
 }
 /*scene 12 shot 4 door 3*/
 

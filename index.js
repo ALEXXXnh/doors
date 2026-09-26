@@ -3,7 +3,18 @@ const bttn1 = document.querySelector(".C1c")
 bttn1.addEventListener('click', function (){
     document.getElementById("prest").style.display = "none";
     document.getElementById("scene1").style.display = "flex";
+    });
+    bttn1.addEventListener('click', () => {
+        music.play();
+        music.loop = "true";
+    });
+    const music = document.querySelector('.music')
+    bttn1.addEventListener('click', () => {
+    music.play();
+    music.loop = "true";
 });
+
+
 const bttn2 = document.querySelector(".continue1")
 bttn2.addEventListener('click', function (){
     document.getElementById("scene1").style.display = "none";
@@ -71,6 +82,11 @@ bttn13.addEventListener('click', function (){
     document.getElementById("scene9").style.display = "none";
     document.getElementById("scene10").style.display = "flex";
 });
+
+
+
+
+
 const bttn14 = document.querySelector(".BG10")
 bttn14.addEventListener('click', function (){
     document.getElementById("scene10").style.display = "none";
@@ -78,9 +94,13 @@ bttn14.addEventListener('click', function (){
 });
 const sound = document.querySelector('.audi')
 bttn14.addEventListener('click', () => {
-    
-}
-)
+    sound.play();
+    sound.currentTime =0;
+});
+
+
+
+
 const bttn15 = document.querySelector(".continue11")
 bttn15.addEventListener('click', function (){
     document.getElementById("scene11").style.display = "none";
